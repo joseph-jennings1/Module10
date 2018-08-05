@@ -1,0 +1,64 @@
+<!Doctype html>
+
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<title>M10 - Usability &amp; Accessibility</title>
+	<link rel="stylesheet" href="Module10.css">
+</head>
+
+<body>
+
+<h1>A Useability and Accessibility assessment of <a href="https://bleacherreport.com/" target="_blank">Bleacher Report</a></h1>
+
+
+
+<table class="center" border="1">
+<tbody>
+	<tr>
+		<td><strong>Assessment criteria</strong></td>
+		<td><strong>PASS / FAIL</strong></td>
+		<td><strong>Screenshot of results</strong></td>
+	</tr>
+	<tr>
+		<td>Website passes the<a href="https://validator.w3.org/"> W3C validator</a></td>
+		<td><a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Fbleacherreport.com%2F" target="_blank">Fail</a></td>
+		<td><img src="W3CM10.png" alt="W3C Validation" width="700" height="400"></td>
+	</tr>
+	<tr>
+		<td>Website passes <a href="https://jigsaw.w3.org/css-validator/">CSS validator</a></td>
+		<td><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fbleacherreport.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en" target="_blank">Fail</a></td>
+		<td><img src="CSSM10.png" alt="jigsaw.w3 validation" width="700" height="400"></td>
+	</tr>
+	<tr>
+		<td>Website status using <a href="https://developers.google.com/speed/pagespeed/insights/">PageSpeed Insights</a></td>
+		<td><a href="https://developers.google.com/speed/pagespeed/insights/?url=https%3A%2F%2Fbleacherreport.com%2F" target="_blank">Average</a></td>
+		<td><img src="PageSpeedM10.png" alt="PageSpeed validation" width="700" height="400"></td>
+	</tr>
+</tbody>
+</table>
+
+<h2>Recommendations</h2>
+	<p>W3 html validation</p>
+	<ul>
+		<li>The first thing I noticed is that Bleacher Report is using a lot of obselete html code, especially with its video (iframe) content. This code should be updated by using CSS instead.</li>
+		<li>The second thing Bleacher Report could improve on is cleaning up what looks to be old sections of their code. Specifically, they have the element itemProp throughout their code, but it is not being used as a property of any other item. This can be cleaned up to make the page more easily accessible.</li>
+	</ul>
+	<p>CSS validation</p>
+	<ul>
+		<li>The CSS used on Bleacher has 14 errors reported. The first issue they could fix is that many of the errors are due to them having properties listedin their code that do not actually exist. Cleaning up these obselete/unused properties could help their page load times and present a cleaner code to outside viewers.</li>
+		<li>A second issue they should address is that many of their videos do not show still image previews while viewed on a mobile device. I am not certain if any of the errors on this CSS validation report correspond to this problem, but fixing this will give their mobile users a better, more enticing viewing experience.</li>
+	</ul>
+	<p>PageSpeed validation</p>
+	<ul>
+		<li>The PageSpeed report for Bleacher Report gives it Average and Medium marks on desktop, and Average and High marks on mobile.</li>
+		<li>This average speeds are given because Bleacher Report has many uncompressed videos, slowing down the average load times for all users. Compressing these files would solve the problem.</li>
+		<li>Another thing Bleacher Report could do to increase its optimization according to PageSpeed is to Leverage browser caching. This could be done by instructing the browser to load previously downloaded local resources instead of loading all resources over the network. This would mean that repeat users would get a faster experience at Bleacher Report.</li>
+	</ul>
+		
+		
+		
+</body>
+
+</html>
