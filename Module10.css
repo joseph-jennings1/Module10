@@ -1,0 +1,20 @@
+* {
+	text-align: center;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+}
+
+table.center {
+    margin-left:auto; 
+    margin-right:auto;
+  }
+ 
+ p {
+	 text-decoration: underline;
+	 font-weight: bold;
+ }
+ 
+ 
